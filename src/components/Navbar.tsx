@@ -1,23 +1,24 @@
 import { useState } from "react";
 export const Navbar=()=> {
+  const efecto_text=' hover:text-black transform hover:rotate-3 transition-all duration-300'
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="bg-gray-800 text-white md:p-0 px-2 py-4">
+    <nav className="bg-gray-800 bg-opacity-80 fixed w-full text-white md:px-0 px-2 py-4 ">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             {/* Logo o título de la página */}
-            <a href="/" className="text-xl font-bold">Nombre de la Página</a>
+            <a href="/" className="text-xs sm:text-3xl font-bold">Des.aprendiendo</a>
           </div>
-          <div className="hidden md:flex">
+          <div className="hidden md:flex ">
             {/* Enlaces de navegación para pantallas medianas y grandes */}
-            <a href="/" className="mx-2">Inicio</a>
-            <a href="/" className="mx-2">Acerca de</a>
-            <a href="/" className="mx-2">Servicios</a>
-            <a href="/" className="mx-2">Contacto</a>
+            <a href="/" className={`${efecto_text} mx-2`}>Inicio</a>
+            <a href="/" className={`${efecto_text} mx-2`}>Sobre Mí</a>
+            <a href="/" className={`${efecto_text} mx-2`}>Servicios</a>
+            <a href="/" className={`${efecto_text} mx-2`}>Contacto</a>
           </div>
           <div className="block md:hidden">
             {/* Icono del menú hamburguesa para pantallas pequeñas */}
@@ -32,7 +33,7 @@ export const Navbar=()=> {
         {isOpen && (
           <div className="md:hidden mt-2">
             <a href="/" className="block px-4 py-2">Inicio</a>
-            <a href="/" className="block px-4 py-2">Acerca de</a>
+            <a href="/" className="block px-4 py-2">Sobre Mí</a>
             <a href="/" className="block px-4 py-2">Servicios</a>
             <a href="/" className="block px-4 py-2">Contacto</a>
           </div>
