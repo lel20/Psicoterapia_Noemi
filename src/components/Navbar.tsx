@@ -6,7 +6,7 @@ export const Navbar=()=> {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="bg-gray-800 bg-opacity-80 fixed w-full text-white md:px-0 px-2 py-4 ">
+    <nav className="bg-gray-800 bg-opacity-80 fixed w-full z-20 text-white md:px-0 px-2 py-4 ">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center">

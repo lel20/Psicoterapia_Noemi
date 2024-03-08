@@ -1,37 +1,36 @@
+import { Introduccion } from "./Introducction/Introduccion";
 import { Card } from "./articles/Card"
-import woman from '../assets/woman.png'
 
 export const MainContent = () => {
   return (
-    <div className="py-20 md:py-32 flex flex-col items-center w-full">
-      <h1 className="text-white w-[80%] text-4xl md:text-7xl font-bold text-center ">
-        ¡Bienvenido a la Terapia Online!
+    <div className="bg-white pt-20 md:py-32 flex flex-col items-center w-full">
+      <h1 className="text-blue-900 w-[70%] text-4xl md:text-7xl font-bold text-center ">
+        ¡Bienvenido a tu terapia online!
       </h1>
-      <article className="max-w-[100%]  mx-auto flex">
-        <div className="bg-slate-600 md:bg-white opacity-50 rounded-lg shadow-md p-6 md:p-8 h-min bg-opacity-50">
-          <div className="text-center text-gray-800 mb-8">
-            <p className="text-lg lg:text-xl">
-              En nuestra plataforma de terapia online, brindamos ayuda
-              profesional y confidencial desde la comodidad de tu hogar.
-            </p>
-            <p className="text-lg lg:text-xl">
-              Nuestros terapeutas especializados están aquí para acompañarte en
-              tu viaje hacia una mejor salud emocional y mental.
-            </p>
-            <p className="text-lg lg:text-xl">
-              Descubre una forma cómoda y accesible de abordar tus desafíos
-              emocionales y mejorar tu bienestar general.
-            </p>
-          </div>
-        </div>
-        <img  className="w-[50%] p-0" src={woman} alt="" />
-      </article>
+      <section className="max-w-[100%]  self-end md:flex">
+       <Introduccion />
+      </section>
 
-      <section className="flex flex-col justify-center items-center  mb-12 bg-white w-full">
-        <div className="flex flex-col md:flex-row w-full text-center justify-center gap-x-10">
-          <Card title={'Terapia invidual'} />
-          <Card title="Terapia Grupal"/>
-          <Card title="Terapia Familiar"/>
+      <section className="flex flex-col justify-center items-center bg-white w-full">
+        <div className="flex flex-col md:flex-row w-full text-center justify-center items-center gap-4 md:py-10">
+          <Card 
+            title={'Terapia invidual'} 
+            precio={15}
+            personas="1 persona"
+            sesion={"1 sesión de 60 min"}
+          />
+          <Card 
+            title="Terapia En Pareja"
+            precio={25}
+            personas="2 persona"
+            sesion="1 sesión de 60 min"
+          />
+          <Card 
+            title="Terapia Grupal"
+            precio={40}
+            personas="más de 2 personas"
+            sesion="1 sesión de 60 min"
+            />
         </div>
         
         <div className="w-full lg:w-2/3 p-4">
