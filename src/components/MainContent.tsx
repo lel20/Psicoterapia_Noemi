@@ -1,39 +1,45 @@
 import { Introduccion } from "./Introducction/Introduccion";
+import './MainCon.css'
 import { Card } from "./articles/Card"
 
 export const MainContent = () => {
   return (
-    <div className="bg-white pt-20 md:py-32 flex flex-col items-center w-full">
-      <h1 className="text-blue-900 w-[70%] text-4xl md:text-7xl font-bold text-center ">
-        ¡Bienvenido a tu terapia online!
-      </h1>
-      <section className="max-w-[100%]  self-end md:flex">
+    <div className="principal">
+      <section className="seccion_1  bg-gradient-to-r from-blue-100 to-white
+      md:rounded-b-[50%] ">
        <Introduccion />
       </section>
 
-      <section className="flex flex-col justify-center items-center bg-white w-full">
-        <div className="flex flex-col md:flex-row w-full text-center justify-center items-center gap-4 md:py-10">
+      <section className="seccion_2 md:flex-row md:py-10 md:px-[5rem]">
           <Card 
             title={'Terapia invidual'} 
             precio={15}
             personas="1 persona"
-            sesion={"1 sesión de 60 min"}
+            sesion={"60 min"}
+            online="100% online"
+            plataforma="Skipe, Google Meet"
           />
           <Card 
             title="Terapia En Pareja"
             precio={25}
-            personas="2 persona"
-            sesion="1 sesión de 60 min"
+            personas="2 personas"
+            sesion="60 min"
+            online="100% online"
+            plataforma="Skipe, Google Meet"
           />
           <Card 
             title="Terapia Grupal"
             precio={40}
             personas="más de 2 personas"
-            sesion="1 sesión de 60 min"
+            sesion="60 min"
+            online="100% online"
+            plataforma="Skipe, Google Meet"
             />
-        </div>
+      
         
-        <div className="w-full lg:w-2/3 p-4">
+       
+      </section>
+       <div className="w-full lg:w-2/3 p-4">
           <h2 className="text-xl lg:text-2xl font-bold mb-4">
             Explora tus sentimientos
           </h2>
@@ -45,7 +51,6 @@ export const MainContent = () => {
             más plena y satisfactoria.
           </p>
         </div>
-      </section>
 
       <div className="text-center bg-white w-full">
         <p className="text-lg lg:text-xl">

@@ -1,15 +1,15 @@
-import './App.css'
-import { Navbar } from './components/Navbar'
-import { MainContent } from './components/MainContent'
-import { Footer } from './components/Footer'
-import backgroundImage from './assets/Naturaleza.jpg'
+import { BrowserRouter as Router, Routes,Route} from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import { SobreMi } from './pages/SobreMi';
+
 function App() {
   return (
-    <div className='min-h-screen bg-no-repeat bg-fixed 'style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: "100%" }}>
-      <Navbar />
-      <MainContent />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route  path="/" element={<HomePage />} />
+         <Route  path="/sobremi" element={<SobreMi />} />
+      </Routes>
+    </Router>
   )
 }
 
