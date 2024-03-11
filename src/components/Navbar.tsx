@@ -17,7 +17,7 @@ export const Navbar=()=> {
             {/* Enlaces de navegación para pantallas medianas y grandes */}
             <a href="/" className={`${efecto_text} mx-2`}>Inicio</a>
             <a href="/sobremi" className={`${efecto_text} mx-2`}>Sobre Mí</a>
-            <a href="/" className={`${efecto_text} mx-2`}>Servicios</a>
+            <a href="/servicios" className={`${efecto_text} mx-2`}>Servicios</a>
             <a href="/" className={`${efecto_text} mx-2`}>Contacto</a>
           </div>
           <div className="block md:hidden">

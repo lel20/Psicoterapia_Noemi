@@ -1,16 +1,44 @@
 import { Introduccion } from "./Introducction/Introduccion";
 import './MainCon.css'
 import { Card } from "./articles/Card"
+import { ServiceCard } from "./articles/ServiCard";
 
 export const MainContent = () => {
   return (
     <div className="principal">
-      <section className="seccion_1  bg-gradient-to-r from-blue-100 to-white
+      <section className="section_1  bg-gradient-to-r from-blue-100 to-white
       md:rounded-b-[50%] ">
        <Introduccion />
       </section>
+      <section className="section_2">
+        <div className="">
+        <h2>Nuestros Servicios</h2>
+        <div className="services-grid">
+          <ServiceCard
+            title="Psicoterapia" 
+            description="Descubre un espacio seguro para explorar tus emociones y desafíos personales." 
+            icon="🧠" 
+          />
+          <ServiceCard 
+            title="Evaluación Psicológica" 
+            description="Obtén una comprensión más profunda de tus necesidades y preocupaciones emocionales." 
+            icon="📋" 
+          />
+          <ServiceCard 
+            title="Asesoramiento" 
+            description="Recibe orientación y apoyo personalizado para enfrentar tus desafíos emocionales." 
+            icon="🤝" 
+          />
+          <ServiceCard 
+            title="Psicoeducación" 
+            description="Participa en talleres grupales diseñados para promover el crecimiento personal y el bienestar emocional." 
+            icon="📚" 
+          />
+        </div>
+      </div>
+      </section>
 
-      <section className="seccion_2 md:flex-row md:py-10 md:px-[5rem]">
+      <section className="section_3 md:flex-row md:py-10 md:px-[5rem]">
           <Card 
             title={'Terapia invidual'} 
             precio={15}

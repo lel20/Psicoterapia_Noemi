@@ -4,16 +4,30 @@
   align-items: center;
   width: 100%;
 }
-.seccion_1{
+.section_1{
+
   width: 100%;
   margin-bottom: 2.5rem;
   padding:10rem 0 4rem 0; /*arriba, abajo*/
   border: solid 2px rgb(138, 216, 255);
   border-bottom-left-radius: 30%;
   border-bottom-right-radius: 30% ;
- 
+  
+  
 }
-.seccion_2{
+.section_2{
+  
+  background-image: url('../assets/Imagenes/mountains.jpg');
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; /* Centra la imagen de fondo */
+  height: 100vh; /* Establece la altura de la sección al 100% del viewport */
+  
+}
+
+.section_3{
   display: flex;
   flex-direction: column;
   justify-content: center;
