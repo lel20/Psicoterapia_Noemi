@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  
 }
 .section_1{
-
   width: 100%;
   margin-bottom: 2.5rem;
   padding:10rem 0 4rem 0; /*arriba, abajo*/
@@ -13,18 +13,39 @@
   border-bottom-left-radius: 30%;
   border-bottom-right-radius: 30% ;
   
+}
+
+/* Sección 2 */
+.section_2{
+  min-width: 100vw;
+  min-height:100vh ;
   
 }
-.section_2{
-  
-  background-image: url('../assets/Imagenes/mountains.jpg');
-  width: 100%;
-  background-attachment: fixed;
+.sectio_2_fondo{
+  background-image: url('../../assets//Imagenes/mountains.jpg');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  background-position: center; /* Centra la imagen de fondo */
-  height: 100vh; /* Establece la altura de la sección al 100% del viewport */
-  
+}
+.section_2_service{
+  color: black;
+  font-size: 0.875rem;
+  padding-top: 8rem;
+  padding-bottom: 0;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1rem;
+}
+.section_2_service_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 4rem;
+  height: 4rem;
+  color: black;
 }
 
 .section_3{

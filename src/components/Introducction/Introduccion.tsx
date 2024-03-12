@@ -5,7 +5,7 @@ import { FaHeartCirclePlus } from "react-icons/fa6";
 export const Introduccion = () => {
   return (
     <>
-      <div className=" text-blue-900 rounded-lg px-4 md:py-14 h-min  w-full  flex flex-col justify-center items-center">
+      <div className=" text-blue-900 rounded-lg px-4 md:py-14 h-min  w-full  flex flex-col justify-center items-center z-20">
         <div className="pb-10 flex flex-col justify-center items-center w-full">
           <p className="text-black sm:text-3xl">¡Bienvenido a tu</p>
           <h1 className="text-blue-900 w-[80%] text-4xl md:text-7xl font-bold text-center ">

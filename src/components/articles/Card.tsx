@@ -12,7 +12,7 @@ export const Card = ({ title,precio,personas,sesion,online, plataforma }:Card) =
   return (
     <article className="article_card md:max-w-[40%]">
       <div className="container1_card">
-        <p className="font-bold  uppercase">
+        <p className="font-bold text-[1rem] lg:text-xl uppercase">
           {title}
         </p>
         <h1 className="flex justify-center gap-1 mt-6  text-6xl">

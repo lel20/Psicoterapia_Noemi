@@ -6,7 +6,7 @@ export const Navbar=()=> {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="bg-gradient-to-r from-blue-100 to-white fixed w-full text-gray-700 md:px-0 px-2 py-4 shadow-lg">
+    <nav className="bg-gradient-to-r from-blue-100 to-white fixed w-full text-gray-700 md:px-0 px-2 py-4 shadow-lg z-10">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -33,8 +33,8 @@ export const Navbar=()=> {
         {isOpen && (
           <div className="md:hidden mt-2">
             <a href="/" className="block px-4 py-2 hover:bg-blue-700 hover:text-white">Inicio</a>
-            <a href="/" className="block px-4 py-2 hover:bg-blue-700 hover:text-white">Sobre Mí</a>
-            <a href="/" className="block px-4 py-2 hover:bg-blue-700 hover:text-white">Servicios</a>
+            <a href="/sobremi" className="block px-4 py-2 hover:bg-blue-700 hover:text-white">Sobre Mí</a>
+            <a href="/servicios" className="block px-4 py-2 hover:bg-blue-700 hover:text-white">Servicios</a>
             <a href="/" className="block px-4 py-2 hover:bg-blue-700 hover:text-white">Contacto</a>
           </div>
         )}
