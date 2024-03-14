@@ -3,14 +3,14 @@ import "./EstilosPage/Homepage.css";
 import { Card } from "../components/articles/Card";
 import { ServiceCard } from "../components/articles/ServiCard";
 import { Parallax } from "react-parallax";
+//imagenes
 import Mountain from "../assets/Imagenes/space.jpg";
+import Mujer from '../assets/Imagenes/mujer.jpg'
+import Mujer2 from '../assets/Imagenes/mujer2.jpg'
 function HomePage() {
   return (
     <div className="principal bg-gradient-to-r from-blue-100 to-white">
-      <section
-        className="section_1  
-               md:rounded-b-[50%]"
-      >
+      <section className="section_1  md:rounded-b-[50%]">
         <Introduccion />
       </section>
 
@@ -31,44 +31,46 @@ function HomePage() {
           <h2 className="section_2_service_title md:text-[8rem] md:h-[8rem]">
             Servicios
           </h2>
-          <div className="services-grid  bg-white mt-80">
-            <div className="container">
+          <div className=" bg-white mt-40  flex  justify-center">
+            <div className="m-0 p-0  grid md:grid-cols-13 ">
               <ServiceCard
+                reverso="md:flex-row"
                 title="Psicoterapia"
-                description="Si te sientes abrumado por el estrés, la ansiedad o la tristeza emocional. ¿No te peocupes! Nuestro servicio de psicoterapia individual, en pareja o grupal está diseñado para ofrecerte un espacio seguro donde puedas explorar tus emociones, superar tus desafíos y encontrar el equilibrio emocional que tanto deseas"
-                icon="🧠"
+                description="Nuestro servicio está diseñado para ofrecerte un espacio seguro donde puedas explorar tus emociones, superar tus desafíos y encontrar el equilibrio emocional que tanto deseas"
+                imagen={Mujer}
               />
-            
-            </div>
-        <div className="container">
+               <ServiceCard
+               reverso="md:flex-row-reverse lg:flex-row"
+                title="Evaluación Psicológica"
+                description="Utilizamos una variedad de herramientas y técnicas, desde pruebas estandarizadas hasta entrevistas especializadas, para evaluar aspectos clave como la personalidad, las habilidades cognitivas y el bienestar emocional"
+                 imagen={Mujer2}
+              />
               <ServiceCard
-                title="Psicoterapia"
-                description="Si te sientes abrumado por el estrés, la ansiedad o la tristeza emocional. ¿No te peocupes! Nuestro servicio de psicoterapia individual, en pareja o grupal está diseñado para ofrecerte un espacio seguro donde puedas explorar tus emociones, superar tus desafíos y encontrar el equilibrio emocional que tanto deseas"
-                icon="🧠"
+                reverso="md:flex-row lg:flex-row-reverse"
+                title="Emisión de certificados"
+                description="Si te sientes abrumado por el estrés, la ansiedad o la tristeza emocional. "
+                imagen={Mujer}
+              />
+              <ServiceCard
+                reverso="md:flex-row-reverse"
+                title="Asesoramiento"
+                description="Si te sientes abrumado por el estrés, la ansiedad o la tristeza emocional. "
+                imagen={Mujer}
+              />
+              <ServiceCard
+                reverso="md:flex-row"
+                title="Psicoeducación"
+                description="Si te sientes abrumado por el estrés, la ansiedad o la tristeza emocional. "
+                imagen={Mujer}
+              />
+               <ServiceCard
+                reverso="md:flex-row-reverse lg:flex-row"
+                title="Talleres Grupales"
+                description="Si te sientes abrumado por el estrés, la ansiedad o la tristeza emocional. "
+                imagen={Mujer}
               />
             </div>
-
-            {/* <ServiceCard
-              title="Evaluación Psicológica"
-              description="Obtén una comprensión más profunda de tus necesidades y preocupaciones emocionales."
-              icon="📋"
-            />
-            <ServiceCard
-              title="Asesoramiento"
-              description="Recibe orientación y apoyo personalizado para enfrentar tus desafíos emocionales."
-              icon="🤝"
-            />
-            <ServiceCard
-              title="Psicoeducación"
-              description="Participa en talleres grupales diseñados para promover el crecimiento personal y el bienestar emocional."
-              icon="📚"
-            />
-            <ServiceCard
-              title="Psicoeducación"
-              description="Participa en talleres grupales diseñados para promover el crecimiento personal y el bienestar emocional."
-              icon="📚"
-            /> */}
-          </div>
+         </div>
         </Parallax>
       </section>
       <section className="section_3 md:flex-row md:py-10 md:px-[5rem]">

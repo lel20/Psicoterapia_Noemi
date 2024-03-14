@@ -1,5 +1,5 @@
 import check from '../../assets/check.svg'
-import './Card.css'
+import './CardaStile/Card.css'
 interface Card{
   title:string
   precio:number
