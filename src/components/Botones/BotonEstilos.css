@@ -1,8 +1,9 @@
 .boton_estilo{
- width: 45%;
+ width: 12rem;
  height: 3rem;
  display: flex;
  justify-content: center;
  align-items:center;
- color:white
+ color:white;
+ transition-duration: 500ms;
 }

@@ -6,12 +6,8 @@
   
 }
 .section_1{
-  width: 100%;
-  margin-bottom: 2.5rem;
-  padding:10rem 0 4rem 0; /*arriba, abajo*/
-  border: solid 2px rgb(138, 216, 255);
-  border-bottom-left-radius: 30%;
-  border-bottom-right-radius: 30% ;
+  display: contents;
+  border: none;
   
 }
 

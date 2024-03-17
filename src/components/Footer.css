@@ -1,10 +1,8 @@
 .foter {
-  position: relative;
+  width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
   background-image: url('../assets/footer.svg');
   background-repeat: no-repeat;
   background-position: bottom;
@@ -12,4 +10,7 @@
   height: 10rem; 
   color: white;
   padding: 0 1rem;
+}
+.foter-p{
+  color: antiquewhite;
 }

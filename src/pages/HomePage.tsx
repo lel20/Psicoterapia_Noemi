@@ -9,8 +9,8 @@ import Mujer from '../assets/Imagenes/mujer.jpg'
 import Mujer2 from '../assets/Imagenes/mujer2.jpg'
 function HomePage() {
   return (
-    <div className="principal bg-gradient-to-r from-blue-100 to-white">
-      <section className="section_1  md:rounded-b-[50%]">
+    <div className="principal">
+      <section className="section_1">
         <Introduccion />
       </section>
 

@@ -7,7 +7,7 @@ interface Elementos{
 }
 export const Boton=({nombre,link,fondo}:Elementos)=>{
   return(
-     <Link to={link} className={ `boton_estilo lg:w-[60%] ${fondo} `}>
+     <Link to={link} className={ `boton_estilo  ${fondo} `}>
             {nombre}
       </Link>
   )

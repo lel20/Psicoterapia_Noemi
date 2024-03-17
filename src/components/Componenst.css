@@ -1,0 +1,44 @@
+nav{
+  position: sticky;
+  top: 0;
+  width:100%;
+  color: rgb(rgb(48, 48, 48));
+  padding: 2rem 1rem 2rem 1rem;
+  z-index: 10;
+  background-color: white;
+}
+.des-title{
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.menu-1{
+  display: none;
+  column-gap: 1rem;
+}
+.opciones,
+.opciones-m{
+  padding: 0.8rem 1rem;
+  text-transform:uppercase;
+  font-weight: 500;
+  color: rgb(71, 71, 71);
+
+}
+.opciones{
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 500ms;
+}
+.opciones:hover{
+  color: rgb(195, 0, 255);
+}
+.opciones-m{
+  display: block;
+  font-size: 1rem;
+}
+.opciones-m:hover{
+  background-color:rgb(195,0,255) ;
+  color: white;
+}

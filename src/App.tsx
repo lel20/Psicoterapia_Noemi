@@ -8,7 +8,7 @@ import { Footer } from './components/Footer';
 function App() {
   return (
     <Router>
-      <div>
+      <>
         <Navbar />
         <Routes>
           <Route  path="/" element={<HomePage />} />
@@ -16,7 +16,7 @@ function App() {
           <Route path="/servicios" element={ <Servicios />} />
         </Routes>
         {<Footer />}
-      </div>
+      </>
     </Router>
   )
 }

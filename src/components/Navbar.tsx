@@ -1,24 +1,27 @@
 import { useState } from "react";
+import './Componenst.css'
 export const Navbar=()=> {
-  const efecto_text='flex hover:text-black transform hover:rotate-3 transition-all duration-300 hover:bg-blue-700 hover:text-white w-20 h-8 items-center justify-center rounded-sm'
+  const whastsapp='https://wa.me/34610937223?text=Hola,%20me%20gustaría%20ponerme%20en%20contacto%20contigo.'
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="bg-gradient-to-r from-blue-100 to-white fixed w-full text-gray-700 md:px-0 px-2 py-4 shadow-lg z-10">
+    <nav>
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             {/* Logo o título de la página */}
-            <a href="/" className="text-xs sm:text-3xl font-bold">Des.aprendiendo</a>
+            <a  href="/" className="des-title md:text-3xl">Des.aprendiendo</a>
+            <a className=" transition-all duration-500 hover:bg-blue-700 hover:text-white w-20 h-8 items-center justify-center rounded-sm" href=""></a>
           </div>
-          <div className="hidden md:flex ">
+          <div className="menu-1 md:flex md:flex-wrap justify-center items-center ">
             {/* Enlaces de navegación para pantallas medianas y grandes */}
-            <a href="/" className={`${efecto_text} mx-2`}>Inicio</a>
-            <a href="/sobremi" className={`${efecto_text} mx-2`}>Sobre Mí</a>
-            <a href="/servicios" className={`${efecto_text} mx-2`}>Servicios</a>
-            <a href="/" className={`${efecto_text} mx-2`}>Contacto</a>
+            <a href="/" className='opciones'>Inicio</a>
+            <a href="/sobremi" className='opciones'>Sobre Mí</a>
+            <a href="/servicios" className='opciones'>Servicios</a>
+            <a href="/" className='opciones'>Contacto</a>
+            <a href={whastsapp} target="_blank" className="opciones bg-purple-700 text-white hover:bg-black hover:text-white">610 937 223</a>
           </div>
           <div className="block md:hidden">
             {/* Icono del menú hamburguesa para pantallas pequeñas */}
@@ -31,11 +34,12 @@ export const Navbar=()=> {
         </div>
         {/* Menú desplegable para pantallas pequeñas */}
         {isOpen && (
-          <div className="md:hidden mt-2">
-            <a href="/" className="block px-4 py-2 hover:bg-blue-700 hover:text-white">Inicio</a>
-            <a href="/sobremi" className="block px-4 py-2 hover:bg-blue-700 hover:text-white">Sobre Mí</a>
-            <a href="/servicios" className="block px-4 py-2 hover:bg-blue-700 hover:text-white">Servicios</a>
-            <a href="/" className="block px-4 py-2 hover:bg-blue-700 hover:text-white">Contacto</a>
+          <div className="bg-white  w-full m-0 h-screen md:hidden mt-2">
+            <a href="/" className="opciones-m ">Inicio</a>
+            <a href="/sobremi" className="opciones-m ">Sobre Mí</a>
+            <a href="/servicios" className="opciones-m ">Servicios</a>
+            <a href="/" className="opciones-m ">Contacto</a>
+            <a href={whastsapp} className="opciones-m" target="_blank">610937223</a>
           </div>
         )}
       </div>
